@@ -1,0 +1,238 @@
+
+@font-face {
+    font-family: "Shabnam-FD";
+    src: url("./fonts/Shabnam-FD.woff2") format("openType");
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Shabnam-FD";
+    font-weight: lighter;
+}
+
+body{
+    background-color: #fff;
+}
+
+.container{
+    padding: 1.5rem;
+}
+
+.header , .footer{
+    background-color: rgb(47, 91, 234);
+
+}
+
+.header-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #CFD8DC;
+    font-size: 1.5rem;
+}
+
+.header-part-text{
+    text-align: right;
+    padding: 1.5rem;
+    text-shadow: 2px 4px 3px #EEEEEE;
+
+}
+
+.header-btns{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header-btn, .header-btn a{
+    width: 100%;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    color: inherit;
+    background-color: #1E88E5;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header-btn:hover{
+    opacity: 0.7;
+}
+
+.header_icon{
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 1.5rem;
+}
+
+.side-menu{
+    list-style-type: none ;
+    width: 200px;
+    left: -200px;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 1rem;
+    gap: 1rem;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    z-index: 2;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: 0.8s all;
+    background-color: rgb(47, 91, 234,0.13);
+    backdrop-filter: blur(15px);
+}
+
+.menu-timesbtn{
+   direction: rtl;
+}
+
+.btntext{
+    height: 200px;
+    left: 200px;
+    right: 0;
+    top: -200px;
+    bottom: 0;
+    margin: 0;
+    padding: 1rem;
+    gap: 1rem;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    z-index: 2;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: 0.8s all;
+    background-color: rgba(30, 136, 229,0.13);
+    backdrop-filter: blur(15px);
+}
+
+.btntext p{
+   display: none;
+   text-align: justify;
+   direction: rtl;
+   font-size: 1.2rem;
+   padding: 1rem;
+}
+
+main{
+    margin-top: 0.5rem;
+}
+
+.english-videos{
+    background-color: #2F5BEA;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem 1.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.video-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+}
+
+.video-wrapper:hover .video-text{
+   border: 3px solid #FF7043;
+}
+
+.video-wrapper:hover .video-duration{
+  transform: scale(1.5);
+  background-color: #FF7043; 
+  color: white;
+}
+
+.video-text{
+    width: 200px;
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+    height: 124px;
+    border-radius: 1rem;
+    box-shadow: 1px 2px 3px 1px #2F5BEA;
+}
+
+.video-duration{
+    font-weight: 800;
+    color: black;
+    font-size: 1rem;
+    font-family: Retina, Helvetica, Arial, sans-serif;
+    transition: all, 1s ease;
+    text-align: center;
+    border-radius: 0.5rem;
+    background-color: #FF7043; 
+    opacity: 1;
+}
+
+
+.video{
+    width: 220px;
+    height: 124px;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    object-fit: cover;
+    /* border-radius: 0.7rem;   */
+}
+
+.svg-wrapper{
+    width: 3rem;
+    height: 3rem;
+    z-index: 1;
+    cursor: pointer;
+    color: bisque;
+    border-radius: 100%;
+    opacity: 0.7;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -90px;
+    
+}
+
+svg{
+    border-radius: 100%;
+    width: 100%;
+    height: 100%; 
+    color: #fff; 
+    transition: all, 1s ease-out;
+}
+
+svg:hover{
+    background-color: #26C6DA;
+    opacity: 0.7;
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+P{
+    color: #FAFAFA;
+}
+
+
+.footer{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.footer-txt{
+    display: flex;
+    justify-content: space-between;
+}
