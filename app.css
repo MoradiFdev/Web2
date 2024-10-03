@@ -236,3 +236,13 @@ P{
     display: flex;
     justify-content: space-between;
 }
+
+@media only screen and (max-width: 576px) {
+    .video-text{
+        visibility: hidden;
+    }
+
+    .btntext p{
+        font-size: 12px;
+    }
+}
